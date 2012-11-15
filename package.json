@@ -1,0 +1,9 @@
+{
+	"name":"network-address",
+	"version":"0.0.1",
+	"dependencies": {},
+	"repository": "git://github.com/mafintosh/network-address",
+	"description":"get the local network address of your machine",
+	"keywords": ["network", "address"],
+	"author": "Mathias Buus Madsen <mathiasbuus@gmail.com>"
+}
