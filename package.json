@@ -1,9 +1,10 @@
 {
 	"name":"network-address",
-	"version":"0.0.1",
+	"version":"0.0.2",
 	"dependencies": {},
 	"repository": "git://github.com/mafintosh/network-address",
 	"description":"get the local network address of your machine",
 	"keywords": ["network", "address"],
-	"author": "Mathias Buus Madsen <mathiasbuus@gmail.com>"
+	"author": "Mathias Buus Madsen <mathiasbuus@gmail.com>",
+	"bin": {"network-address":"./cli.js"}
 }
