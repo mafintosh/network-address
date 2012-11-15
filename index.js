@@ -1,6 +1,6 @@
 var os = require('os');
 
-var networkAddress = function() {
+module.exports = function() {
 	var interfaces = os.networkInterfaces();
 	for (var i in interfaces) {
 		for (var j = 0; j < interfaces[i].length; j++) {
@@ -9,8 +9,4 @@ var networkAddress = function() {
 		}
 	}
 	return '127.0.0.1';
-};
-
-module.exports = function(port) {
-	return port ? networkAddress()+':'+port : networkAddress();
 };
