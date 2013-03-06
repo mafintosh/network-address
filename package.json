@@ -1,6 +1,6 @@
 {
 	"name":"network-address",
-	"version":"0.0.3",
+	"version":"0.0.4",
 	"dependencies": {},
 	"repository": "git://github.com/mafintosh/network-address",
 	"description":"get the local network address of your machine",
