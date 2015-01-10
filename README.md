@@ -6,6 +6,8 @@ get the local network address of your machine
 npm install network-address
 ```
 
+[![build status](http://img.shields.io/travis/mafintosh/network-address.svg?style=flat)](http://travis-ci.org/mafintosh/network-address)
+
 it is easy to use
 
 ``` js
