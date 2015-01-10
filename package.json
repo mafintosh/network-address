@@ -1,6 +1,6 @@
 {
   "name": "network-address",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "scripts": {
     "test": "tape test.js"
   },
