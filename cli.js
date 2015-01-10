@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log(require('./index')());
+if (process.argv.indexOf('-6') > -1) console.log(require('./index').ipv6())
+else console.log(require('./index')())
