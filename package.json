@@ -1,8 +1,14 @@
 {
   "name": "network-address",
   "version": "0.0.5",
+  "scripts": {
+    "test": "tape test.js"
+  },
   "dependencies": {},
-  "repository": "git://github.com/mafintosh/network-address",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mafintosh/network-address"
+  },
   "description": "get the local network address of your machine",
   "keywords": [
     "network",
@@ -11,5 +17,14 @@
   "author": "Mathias Buus Madsen <mathiasbuus@gmail.com>",
   "bin": {
     "network-address": "./cli.js"
-  }
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/mafintosh/network-address/issues"
+  },
+  "homepage": "https://github.com/mafintosh/network-address",
+  "main": "index.js",
+  "license": "MIT"
 }
