@@ -2,7 +2,7 @@
   "name": "network-address",
   "version": "1.0.0",
   "scripts": {
-    "test": "tape test.js"
+    "test": "standard && tape test.js"
   },
   "dependencies": {},
   "repository": {
@@ -19,6 +19,7 @@
     "network-address": "./cli.js"
   },
   "devDependencies": {
+    "standard": "^6.0.7",
     "tape": "^3.0.3"
   },
   "bugs": {

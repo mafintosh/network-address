@@ -1,30 +1,30 @@
-var os = require('os');
+var os = require('os')
 
-function pickInterface(interfaces, family) {
+function pickInterface (interfaces, family) {
   for (var i in interfaces) {
-    for (var j = interfaces[i].length-1; j >= 0; j--) {
+    for (var j = interfaces[i].length - 1; j >= 0; j--) {
       var face = interfaces[i][j]
       if (!face.internal && face.family === family) return face.address
     }
   }
-  return family == 'IPv4' ? '127.0.0.1' : '::1'
+  return family === 'IPv4' ? '127.0.0.1' : '::1'
 }
 
-function reduceInterfaces(interfaces, iface) {
+function reduceInterfaces (interfaces, iface) {
   var ifaces = {}
   for (var i in interfaces) {
-    if (i == iface) ifaces[i] = interfaces[i]
+    if (i === iface) ifaces[i] = interfaces[i]
   }
   return ifaces
 }
 
-var ipv4 = function(iface) {
+function ipv4 (iface) {
   var interfaces = os.networkInterfaces()
   if (iface) interfaces = reduceInterfaces(interfaces, iface)
   return pickInterface(interfaces, 'IPv4')
 }
 
-var ipv6 = function(iface) {
+function ipv6 (iface) {
   var interfaces = os.networkInterfaces()
   if (iface) interfaces = reduceInterfaces(interfaces, iface)
   return pickInterface(interfaces, 'IPv6')
