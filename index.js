@@ -4,7 +4,7 @@ function pickInterface (interfaces, family) {
   for (var i in interfaces) {
     for (var j = interfaces[i].length - 1; j >= 0; j--) {
       var face = interfaces[i][j]
-      if (!face.internal && face.family === family) return face.address
+      if (!face.internal && face.family === family && face.scopeid === 0) return face.address
     }
   }
   return family === 'IPv4' ? '127.0.0.1' : '::1'
